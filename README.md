@@ -1,3 +1,14 @@
+# f4admissionproject-m0
+
+https://v-gutierrez.github.io/f4admissionproject-m0/
+
+
+Tenho um carinho enorme por esse projeto. Desenvolvi ele em cerca de 2 semanas e parti do absoluto zero: não sabia programar. Foi incrível e foi o meu ponto de partida para a área do conhecimento que tem mudado a minha vida.
+
+O desafio para os/as <i>newcomers<i/>, como eu, era aprender do zero utilizando os materiais dispostos no enunciado (e além). Lembro de como fiquei orgulhoso após horas e horas de pesquisa para coisas que hoje pra mim são triviais. Isso realmente me encanta. Esse é um projeto que nunca quero esquecer.
+
+
+
 # Projeto de seleção Future4: preparad@ para o Futuro?
 
 Obrigado por participar do processo seletivo da Future4. Nesse repositório você encontra as instruções e arquivos necessários para você participar desse processo. Para dar início, pedimos que você leia esse texto (arquivo README.md) por completo, e siga de forma rigorosa as nossas instruções. Qualquer dúvida ou problema no processo, não exite em entrar em contato com a equipe Future4 pelo nosso Slack. Boa sorte!
