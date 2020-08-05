@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('Roboto-Regular.ttf'), url('Roboto-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('Roboto-Italic.ttf'), url('Roboto-Italic.ttf') format('ttf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('Roboto-Bold.ttf'), url('Roboto-Bold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+body {                                                   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #CD4D00;
+  height: 60px;
+  justify-content: flex-end;
+  font-size: 25px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  transition: 2.5s;
+  }
+
+.opcoes {
+  display: inline-flex;
+  margin-right: 12px;
+  color: #FBFBFC;
+  width: 200;
+  height: 60px;
+  justify-content: space-around;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.home,
+.cursos {
+  margin-right: 15px;
+}
+
+.body {
+  display: flex;
+  width: 100%;
+  background-color: #595F96;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity, 2s;
+}
+
+.logo {
+  margin-top: 70px
+}
+
+.background {
+  margin-top: 100px;
+  font-size: 22px;
+  }
+
+.footer {
+  display: flex;
+  background-color: #D8D8D8;
+  width: 100%;
+  height: 190px;
+  align-items: center;
+  justify-content: center;
+  transition: 2.5s ;
+}
+
+.insert {
+  display: flex;
+  background-color: #FBFBFC;
+  border: 1px solid #757575;
+  height: 50px;
+  width: 320px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #757575;
+  padding-left: 2px
+}
+
+.enviar {
+  display: flex;
+  background-color: #CD4D00;
+  width: 70px;
+  height: 54px;
+  border: 1px solid #757575;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#voltar{
+  display: none;
+  position: absolute;
+  bottom: 200px;
+  animation-name: voltar;
+  animation-duration: 2.5s;
+}
+
+@keyframes voltar{
+  from:{bottom: 0}
+  to:{ bottom: 300px}
+}
+
+.turma {
+  display: flex;
+  font-size: 22px;
+  font-style: italic;
+  color: #FBFBFC;
+  background-color: #595F96;
+  padding-right: 15px;
+  align-self: flex-end;
+  margin-top: 205px;
+
+}
+
+.bemvindo {
+  font-size: 36px;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  animation-name: teste;
+  animation-duration: 5s;
+  animation-iteration-count: 1;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes teste{
+  from {font-size: 36px;
+ ;}
+  to {font-size: 48px;
+  color: white;}
+}
+
+.logobemv{
+  max-width: 100%;
+  display: none;
+  animation-name: logobemv;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  }
+
+  @keyframes logobemv{
+    from: {top: 10px}
+    to {top: 190px;}
+  }
+
+  .mobileheader{
+    display: none
+  }
+
+
+/*  ---------------------------------------------------- */
+
+@media only screen and (max-width: 815px){
+  /*a tal da media query*/
+  /*Iphone X*/
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  .turma {
+    align-self: center;
+    font-weight: normal;
+    font-style: normal;
+    padding: 0%;
+    font-size: 6vw;
+  }
+
+  .insert {
+    width: 67vw;
+    font-size: 3.7vw
+  }
+
+  .bemvindo {
+    font-size: 20px;
+    animation-name: mobile-teste;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .header {
+    font-size: 7vw;
+    height: 60px;
+    width: 100%;
+    justify-content: space-around;
+    display: none;
+  }
+  
+  #voltar {
+    bottom: 100px;
+  }
+
+  @keyframes voltar {
+    from: {
+      bottom: 0
+    }
+
+    to: {
+      bottom: 100px
+    }
+  }
+
+  .footer {
+    height: 160px;
+  }
+  @keyframes mobile-teste {
+    from {
+      font-size: 3vw;
+    }
+    
+    to {
+      font-size: 6vw;
+    }
+  }
+
+  .logobemv{
+    width: 70%;
+      }
+
+  .mobileheader{
+    display: flex;
+    width: 100%;
+    background-color: #CD4D00;
+    height: 60px;
+    font-size: 25px;
+    position: sticky;
+    top: 0px;
+    transition: 2.5s;
+    font-size: 7vw;
+    height: 60px;
+    width: 100%;
+        }
+
+    .mobilemenubt{
+      position: absolute;
+      align-self: center;
+      right: 20px;
+      width:  40px;
+      height: 40px;
+     }
+    
+    
+    #menumobile{
+      flex-direction: column;
+      width: 80%;
+      border-radius: 34px 1px 24px 2px;
+      background-color: #CD4D00;
+      border: 1px solid white;
+      position: absolute;
+      right: 40px;
+      top: 50px;
+      animation-name: menumobile;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+      #mobilelogo {
+        width: 130px;
+        height: 20px;
+        align-self: center;
+        margin-left: 15px;        
+      }
+      
+      
+    }
+    .opcoes1, .opcoes2, .opcoes3{
+      text-align: center;
+      width: 100%;
+      color: #FBFBFC;
+      width: 100%;     
+      }
+
+      .opcoes1, .opcoes2{
+            margin-bottom: 10px;
+          }
+
+     .toggle{
+        display: none;
+        opacity: 1;
+        
+      }
+
+      
+
+@keyframes menumobile {
+  from {
+    font-size: 1vw;
+    opacity: 0;
+    width: 20%;
+  }
+
+  to {
+    font-size: 6vw;
+    opacity: 1;
+    width: 80%;
+  }
+}
+
+
+
+@media only screen and (max-width: 815px) and (orientation: landscape){
+
+.logobemv{
+width: 0px;
+}
+
+.bemvindo {
+  animation-name: mobile-teste-landscape;
+}
+
+@keyframes mobile-teste-landscape {
+  from {
+    font-size: 1vw;
+  }
+
+  to {
+    font-size: 6vw;
+  }
+}
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- "Responsive Design as said in W3"-->
+  <meta name="author" content="Victor Gutierrez :D"> <!-- me, mylself and I -->
+  <meta name="description" content="Projeto Seletivo Future 4"> <!-- description-->
+  <title>Projeto Future4</title>
+  <link rel="stylesheet" href="styles.css"> <!-- CSS link-->
+  <link rel="icon" href="F4.png"> <!-- tab icon-->
+
+</head>
+
+<body id="allpage">
+
+
+
+
+
+  <!-- Cabeçalho-->
+  <header id="firstheader" class="header" style="color: #FBFBFC;">
+    <div class="opcoes">
+      <nav class="home"> <a href="https://www.future4.com.br">HOME</a> </nav>
+      <nav class="cursos"> <a href="https://www.future4.com.br/curso">CURSOS</a> </nav>
+      <nav class="contato" onclick="contato()"><a href="#">CONTATO</a></nav>
+    </div>
+  </header>
+
+  <!--Cabeçalho Mobile-->
+  <header id="headermobile" class="mobileheader">
+    <img src="headlogo.png" alt="" id="mobilelogo">
+    <div class="mobilemenubt" onclick="onOff()"><img src="menu.svg" ></div>
+    <div id="menumobile" class="toggle">
+    <div class="opcoes1"><a href="https://www.future4.com.br">HOME</a></div>
+    <div class="opcoes2"><a href="https://www.future4.com.br/curso">CURSOS</a></div>
+    <div class="opcoes3" onclick="contato()"><a href="#">CONTATO</a></div>
+    </div>
+  </header>
+
+  <!-- Corpo -->
+  <article class="body" id="hbody" style="color: #FBFBFC; text-decoration: none">
+    <div class="background"><h1>Projeto Seletivo Future 4</h1></div>
+   <a href="https://www.future4.com.br"><img class="logo" src="future4.jpg" title="Future4: future, for everyone" width="600" height="300" alt="Future4, Future for everyone"></a>
+   <div class="turma">Turma Web Full Stack</div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <img class="logobemv" id="logobemv" style="display:none" src="headlogo.png" alt=""></img>
+    <form method="get" onsubmit="help()" class="footer" id="form">
+      <h2 class="bemvindo" style="display:none;" id="pls"> Seja bem-vind@, futur@ astronauta!</h2>
+      <input name="email" class="insert" id="email" style="color: #757575;" type="text" autocapitalize="off" spellcheck="false" placeholder="Coloque seu e-mail para contato! :)" required>
+      <a href="index.html" id="voltar">Voltar</a>
+      <button type="submit" id="button" class="enviar" style="color: #FBFBFC; text-decoration: none; font-weight: bold;">ENVIAR</button>
+    </form>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+
+
+</body>
+
+</html>
